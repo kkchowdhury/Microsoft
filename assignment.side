@@ -1,0 +1,58 @@
+{
+  "id": "5a194397-afcb-4c7d-ac05-cbf1b0c112c4",
+  "version": "2.0",
+  "name": "Download Latest PDF",
+  "url": "https://www.who.int",
+  "tests": [{
+    "id": "37133b5d-a451-4d53-b03f-3e9fa8304500",
+    "name": "Download Latest PDF",
+    "commands": [{
+      "id": "63215538-8072-43b5-ac0e-16780fe34088",
+      "comment": "",
+      "command": "open",
+      "target": "/publications/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55f8a89b-777c-4aff-9c66-e45ba7b6ab1b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e846cf5-231e-41a1-8a8f-cbc41c6fa3ad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, '.pdf')][1]",
+      "targets": [
+        ["xpath=//a[contains(@href, '.pdf')][1]", "xpath:href"]
+      ],
+      "value": ""
+    }, {
+      "id": "bac8744c-e096-463f-9d68-1adc62653774",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35c6302e-c6e4-496f-9fd3-1b1c64daa5b2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cd4899b3-6e07-491d-82a6-9ab8184f81a7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["37133b5d-a451-4d53-b03f-3e9fa8304500"]
+  }],
+  "urls": ["https://www.who.int/"],
+  "plugins": []
+}
